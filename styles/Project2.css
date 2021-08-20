@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "Manrope-Bold";
+    src: url("/styles/project2_assets/fonts/static/Manrope-Bold.ttf");
+}
+@font-face {
+    font-family: "Manrope-Medium";
+    src: url("/styles/project2_assets/fonts/static/Manrope-Medium.ttf");
+}   
+@font-face {
+    font-family: "Manrope-Bold";
+    src: url("/styles/project2_assets/fonts/static/Manrope-Light.ttf");
+}
+:root {
+    --pri__color: #4F46B8;
+    --sec__color: #575757;
+    --cap__color: #A0A0A0;
+    --li_color: #484848;
+    --bkg__color: rgb(230, 235, 237);
+    --nav__color: rgb(57, 58, 59);
+    --navhr__color: #DDDAFF;
+    --info__link: #8a87cc;
+    --cardtxt__color: #ffffff;
+    --card__bkg: #F2F5FB;
+    font-family: Manrope;
+    --Medium__font: "Manrope-Medium";
+    --Bold__font:"Manrope-Bold";
+    --Light__font:"Manrope-Light";
+    --font__wt:600;
+    --normal__font:normal;
+    --xxlarge__font: xx-large;
+    --xlarge__font:x-large;
+    --large__font:large;
+    --xxsmall__font:xx-small;
+    --xsmall__font:x-small;
+    --smaill_font:small;
+}
+
+
+body {
+    background-color: var(--bkg__color);
+    
+}
+
+main {
+    margin: 1em 6em;
+}
+
+.mepay {
+    
+    padding: 1em;
+}
+
+.mepay hr {
+    border-color: var(--navhr__color);
+}
+
+#mepay__nav {
+    font-family: var(--Medium__font);
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+#nav__left span {
+    color: var(--pri__color);
+}
+
+#nav__right {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+#nav__right li a{
+    text-decoration: none;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav__item-color{
+    color: var(--nav__color);
+}
+.nav__item-color--active{
+    color: var(--pri__color);
+}
+
+#mepay__info span {
+    font-size: x-large;
+    font-family: var(--Bold__font);
+    color: var(--pri__color);
+}
+#heading__p{
+    font-size: x-large;
+    font-family: var(--Medium__font);
+}
+#info__p {
+    font-family: var(--Medium__font);
+    font-size: var(--Medium__font);
+    color: var(--sec__color);
+}
+
+#mepay__info a {
+    border-color: var(--pri__color);
+    text-decoration: underline var(--info__link);
+    font-family: var(--Medium__font);
+}
+/* card 1*/
+#mepay__cards{
+    margin: 0px 2em;
+    display: flex;
+    justify-content: space-between;  
+       
+}
+#card__1 {
+    background-color: var(--pri__color);
+    display: block;
+    padding: 1em;
+    width: 25%;
+    font-family: var(--Medium__font);
+    font-size: var(--xlarge__font);
+    text-align: center;
+    color: var(--cardtxt__color);
+    border-radius: 8px;
+}
+
+
+#card__1 img {
+    width: 100%;
+    height: auto;
+}
+/* card 2 */
+#card__init {
+    background-color: var(--card__bkg);
+    display: block;
+    padding: 1em;
+    border-radius: 32px;
+    font-family: var(--Medium__font);
+    width: 25%;
+}
+#card__init:hover{
+    border: groove 3px var(--navhr__color);
+}
+#link__2 a {
+    text-decoration: none;
+    font-size: var(--xxlarge__font);
+    font-weight: var(--font__wt);
+    color: var(--li_color);
+}
+
+#card__init hr {
+    display: inline-block;
+    width: 40%;
+    border-color: var(--pri__color);
+}
+#plan__2{
+    display: inline-flexbox;
+    flex-direction: column;
+}
+#plan__2 p{
+    font-size: var(--xsmall__font);
+    color: var(--cap__color);
+}
+#plan__2 li{
+    font-size: var(--Medium__font);
+    list-style-type: disc;
+}  
+#button__2{
+    text-align: center;
+    margin-top: 11em;
+} 
+#button__2 a{
+    font-family: var(--Medium__font);
+    font-size: var(--smaill_font);
+    text-decoration: none;
+    color: white;
+    border: none 2px;
+    background-color: var(--pri__color);
+    padding: 1em;
+}
+/* card 3 */
+
+#link__3 a {
+    text-decoration: none;
+    font-size: var(--xxlarge__font);
+    font-weight: var(--font__wt);
+    color: var(--li_color);
+}
+#plan__3{
+    display: inline-flexbox;
+    flex-direction: column;
+}
+#plan__3 p{
+    font-size: var(--xsmall__font);
+    color: var(--cap__color);
+}
+#plan__3 li{
+    font-size: var(--Medium__font);
+    list-style-type: disc;
+}  
+#button__3{
+    text-align: center;
+    margin-top: 11em;
+} 
+#button__3 a{
+    font-family: var(--pri__font);
+    font-size: var(--smaill_font);
+    text-decoration: none;
+    color: white;
+    border: none 2px;
+    background-color: var(--pri__color);
+    padding: 1em;
+}
