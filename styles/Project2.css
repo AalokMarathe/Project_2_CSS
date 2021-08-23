@@ -1,3 +1,6 @@
+/* *{
+    box-sizing: border-box;
+ } */
 @font-face {
     font-family: "Manrope-Bold";
     src: url("/styles/project2_assets/fonts/static/Manrope-Bold.ttf");
@@ -7,7 +10,7 @@
     src: url("/styles/project2_assets/fonts/static/Manrope-Medium.ttf");
 }   
 @font-face {
-    font-family: "Manrope-Bold";
+    font-family: "Manrope-Light";
     src: url("/styles/project2_assets/fonts/static/Manrope-Light.ttf");
 }
 :root {
@@ -15,7 +18,7 @@
     --sec__color: #575757;
     --cap__color: #A0A0A0;
     --li_color: #484848;
-    --bkg__color: rgb(230, 235, 237);
+    --bgc__color: rgb(230, 235, 237);
     --nav__color: rgb(57, 58, 59);
     --navhr__color: #DDDAFF;
     --info__link: #8a87cc;
@@ -27,17 +30,17 @@
     --Light__font:"Manrope-Light";
     --font__wt:600;
     --normal__font:normal;
-    --xxlarge__font: xx-large;
-    --xlarge__font:x-large;
-    --large__font:large;
-    --xxsmall__font:xx-small;
-    --xsmall__font:x-small;
-    --smaill_font:small;
+    --xxlarge__font: 2em;
+    --xlarge__font: 1.3em;
+    --large__font:1em;
+    --xxsmall__font:0.2em;
+    --xsmall__font: 1em;
+    --smaill_font:0.5em;
 }
 
 
 body {
-    background-color: var(--bkg__color);
+    background-color: var(--bgc__color);
     
 }
 
@@ -85,12 +88,12 @@ main {
 }
 
 #mepay__info span {
-    font-size: x-large;
+    font-size: var(--xlarge__font);
     font-family: var(--Bold__font);
     color: var(--pri__color);
 }
 #heading__p{
-    font-size: x-large;
+    font-size: var(--xlarge__font);
     font-family: var(--Medium__font);
 }
 #info__p {
@@ -108,12 +111,14 @@ main {
 #mepay__cards{
     margin: 0px 2em;
     display: flex;
+    align-items: center;
     justify-content: space-between;  
        
 }
 #card__1 {
     background-color: var(--pri__color);
-    display: block;
+    display: inline-block;
+    height: 45vh;
     padding: 1em;
     width: 25%;
     font-family: var(--Medium__font);
@@ -125,20 +130,22 @@ main {
 
 
 #card__1 img {
-    width: 100%;
-    height: auto;
+    width: 80%;
 }
 /* card 2 */
 #card__init {
     background-color: var(--card__bkg);
-    display: block;
-    padding: 1em;
+    padding: 2em;
     border-radius: 32px;
     font-family: var(--Medium__font);
     width: 25%;
 }
 #card__init:hover{
-    border: groove 3px var(--navhr__color);
+    box-shadow: 4px 4px 12px 1px #C8C5E8;
+    border-radius: 32px !important;
+    border: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(180deg, #8075F8 0%, #64C7F1 100%);
 }
 #link__2 a {
     text-decoration: none;
@@ -148,7 +155,8 @@ main {
 }
 
 #card__init hr {
-    display: inline-block;
+    display:inline-block;
+    
     width: 40%;
     border-color: var(--pri__color);
 }
@@ -157,16 +165,20 @@ main {
     flex-direction: column;
 }
 #plan__2 p{
-    font-size: var(--xsmall__font);
+    font-size: 1em;
+    margin: 0em;
+    margin-bottom: 2em;
     color: var(--cap__color);
 }
+#plan__2 ul{
+    list-style-image: url("/styles/project2_assets/Ellipse\ 15.svg")    
+}
 #plan__2 li{
-    font-size: var(--Medium__font);
-    list-style-type: disc;
-}  
+    margin-bottom: 1.5em;
+}
 #button__2{
     text-align: center;
-    margin-top: 11em;
+    margin-top: 2em;
 } 
 #button__2 a{
     font-family: var(--Medium__font);
@@ -190,16 +202,20 @@ main {
     flex-direction: column;
 }
 #plan__3 p{
-    font-size: var(--xsmall__font);
+    font-size: 1em;
+    margin: 0em;
+    margin-bottom: 2em;
     color: var(--cap__color);
 }
+#plan__3 ul{
+    list-style-image: url("/styles/project2_assets/Ellipse\ 15.svg");
+}
 #plan__3 li{
-    font-size: var(--Medium__font);
-    list-style-type: disc;
-}  
+    margin-bottom: 1.5em;
+}
 #button__3{
     text-align: center;
-    margin-top: 11em;
+    margin-top: 2em;
 } 
 #button__3 a{
     font-family: var(--pri__font);
@@ -209,4 +225,5 @@ main {
     border: none 2px;
     background-color: var(--pri__color);
     padding: 1em;
+    margin-top: 1em;
 }
