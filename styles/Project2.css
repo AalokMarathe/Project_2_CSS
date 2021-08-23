@@ -35,7 +35,7 @@
     --large__font:1em;
     --xxsmall__font:0.2em;
     --xsmall__font: 1em;
-    --smaill_font:0.5em;
+    --small_font:0.5em;
 }
 
 
@@ -182,12 +182,12 @@ main {
 } 
 #button__2 a{
     font-family: var(--Medium__font);
-    font-size: var(--smaill_font);
+    font-size: var(--Medium__font);
     text-decoration: none;
     color: white;
     border: none 2px;
     background-color: var(--pri__color);
-    padding: 1em;
+    padding: 0.8em;
 }
 /* card 3 */
 
@@ -219,11 +219,11 @@ main {
 } 
 #button__3 a{
     font-family: var(--pri__font);
-    font-size: var(--smaill_font);
+    font-size: var(--Medium__font);
     text-decoration: none;
     color: white;
     border: none 2px;
     background-color: var(--pri__color);
-    padding: 1em;
+    padding: 0.8em;
     margin-top: 1em;
 }
